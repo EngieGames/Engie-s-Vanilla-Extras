@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "tag @s add tpa.sender\nexecute as @a if score @s tpa.pid = @a[tag=tpa.sender,limit=1] tpa run tag @s add tpa.target\nexecute unless entity @a[tag=tpa.target] run tellraw @s [{\"text\":\"No player with PID \",\"color\":\"red\"},{\"score\":{\"name\":\"@s\",\"objective\":\"tpa\"},\"color\":\"red\"},{\"text\":\" was found.\",\"color\":\"red\"}]\nexecute if entity @s[tag=tpa.target] run tellraw @s {\"text\":\"You cannot send a teleport request to yourself.\",\"color\":\"red\"}\nexecute as @a[tag=!tpa.sender,tag=tpa.target,limit=1] run function minecraft:receive_tpa\ntag @s remove tpa.target",
+    "name": "send_tpa",
+    "namespace": "mod"
+  }
+}

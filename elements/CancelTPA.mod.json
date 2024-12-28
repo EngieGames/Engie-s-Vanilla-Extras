@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "tag @s add tpa.cancelSender\nscoreboard players reset @s tpa.target\nscoreboard players reset @s tpa.timeout\ntag @a[tag=tpa.cancelSender] remove tpa.cancelSender\ntag @a[tag=tpa.sender] remove tpa.sender\ntag @a[tag=tpa.target] remove tpa.target",
+    "name": "cancel_tpa",
+    "namespace": "mod"
+  }
+}

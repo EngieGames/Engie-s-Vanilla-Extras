@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "execute unless score @s tpa.target matches 1.. run tellraw @s {\"text\":\"You have no active teleport requests to cancel.\",\"color\":\"red\"}\nexecute if score @s tpa.target matches 1.. run function minecraft:cancel_tpa",
+    "name": "trigger_tpcancel",
+    "namespace": "mod"
+  }
+}

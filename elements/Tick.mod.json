@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "schedule function minecraft:tick 1t\nexecute as @a unless score @s tpa.pid matches 1.. store result score @s tpa.pid run scoreboard players add last tpa.pid 1\nscoreboard players add @a[scores={tpa.target=1..}] tpa.timeout 1\nexecute as @a[scores={tpa.timeout=6000..}] run function minecraft:time_out_tpa\nexecute as @a[scores={tpa=1..}] run function minecraft:trigger_tpa\nscoreboard players enable @a tpa\nexecute as @a[scores={tpcancel=1}] run function minecraft:trigger_tpcancel\nscoreboard players enable @a tpcancel\nscoreboard players set @a tpcancel 0\nexecute as @a[scores={tpaccept=0..}] run function minecraft:trigger_tpaccept\nscoreboard players enable @a tpaccept\nscoreboard players set @a tpaccept -1\nexecute as @a[scores={tpdeny=0..}] run function minecraft:trigger_tpdeny\nscoreboard players enable @a tpdeny\nscoreboard players set @a tpdeny -1",
+    "name": "tick",
+    "namespace": "mod"
+  }
+}

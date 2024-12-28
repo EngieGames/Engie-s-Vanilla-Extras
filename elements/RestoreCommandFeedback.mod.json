@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "gamerule sendCommandFeedback true",
+    "name": "restore_command_feedback",
+    "namespace": "mod"
+  }
+}

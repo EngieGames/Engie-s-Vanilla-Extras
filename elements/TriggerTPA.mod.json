@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "execute if score @s tpa.cooldown matches 1.. run tellraw @s [{\"text\":\"Your TPA cooldown will end in \",\"color\":\"red\"},{\"score\":{\"name\":\"@s\",\"objective\":\"tpa.cooldown\"},\"color\":\"red\"},{\"text\":\" seconds.\",\"color\":\"red\"}]\nexecute unless score @s tpa.cooldown matches 1.. run function minecraft:send_tpa\nscoreboard players set @s tpa 0",
+    "name": "trigger_tpa",
+    "namespace": "minecraft"
+  }
+}

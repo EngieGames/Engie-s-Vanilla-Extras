@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "tag @s add tpa.self\nexecute as @a[tag=tpa.sender] if score @s tpa.timeout > @a[tag=tpa.self,limit=1] tpa.timeout run tag @s remove tpa.sender\ntag @s remove tpa.self",
+    "name": "untag_older_senders",
+    "namespace": "mod"
+  }
+}

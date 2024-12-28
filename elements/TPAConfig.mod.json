@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "tellraw @s {\"text\":\"                                                                                \",\"color\":\"dark_gray\",\"strikethrough\":true}\ntellraw @s [\"                           TPA\",{\"text\":\" / \",\"color\":\"gray\"},\"Global Settings                           \"]\ntellraw @s {\"text\":\"                                                                                \",\"color\":\"dark_gray\",\"strikethrough\":true}\ntellraw @s [\"\",{\"text\":\"[ ✎ ]\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/scoreboard players set #cooldown tpa.config \"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[\"\",{\"text\":\"Click to enter the number of seconds required to wait between uses of the TPA command.\",\"color\":\"gray\"},{\"text\":\"\\nAccepts: whole numbers 0+\\nDefault: 0\",\"color\":\"dark_gray\"}]}},\" Cooldown \",{\"text\":\"(Current: \",\"color\":\"gray\"},{\"score\":{\"name\":\"#cooldown\",\"objective\":\"tpa.config\"},\"color\":\"gray\"},{\"text\":\")\",\"color\":\"gray\"}]\ntellraw @s {\"text\":\"                                                                                \",\"color\":\"dark_gray\",\"strikethrough\":true}\nexecute store result score sendCommandFeedback tpa.config run gamerule sendCommandFeedback\nexecute if score sendCommandFeedback tpa.config matches 1 run function minecraft:hide_command_feedback",
+    "name": "tpa_config",
+    "namespace": "mod"
+  }
+}

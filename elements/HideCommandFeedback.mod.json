@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "gamerule sendCommandFeedback false\nschedule function minecraft:restore_command_feedback 1t replace",
+    "name": "hide_command_feedback",
+    "namespace": "mod"
+  }
+}

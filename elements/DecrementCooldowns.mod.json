@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "schedule function minecraft:decrement_cooldowns 1s\nexecute as @a[scores={tpa.cooldown=1..}] run function minecraft:decrement_cooldown",
+    "name": "decrement_cooldowns",
+    "namespace": "mod"
+  }
+}

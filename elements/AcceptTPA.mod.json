@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "execute unless score cooldown tpa.config matches 0 run scoreboard players operation @s tpa.cooldown = cooldown tpa.config\nexecute at @s run function back:set_back\ntp @a[tag=tpa.sender] @a[tag=tpa.target,limit=1]\nscoreboard players reset @s tpa.target\nscoreboard players reset @s tpa.timeout\ntag @a[tag=tpa.sender] remove tpa.sender\ntag @a[tag=tpa.targer] remove tpa.target",
+    "name": "accept_tpa",
+    "namespace": "mod"
+  }
+}

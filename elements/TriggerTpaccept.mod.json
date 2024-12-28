@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "tag @s add tpa.target\nexecute as @a if score @s tpa.target = @a[tag=tpa.target,limit=1] tpa.pid run tag @s add tpa.sender\nexecute unless score @s tpaccept matches 0 as @a unless score @s tpa.pid = @a[tag=tpa.target,limit=1] tpaccept run tag @s remove tpa.sender\nexecute unless score @s tpaccept matches 0 unless entity @a[tag=tpa.sender] run tellraw @s [{\"text\":\"You have no active teleport requests from a player with PID \",\"color\":\"red\"},{\"score\":{\"name\":\"@s\",\"objective\":\"tpaccept\"},\"color\":\"red\"},{\"text\":\" to accept.\",\"color\":\"red\"}]\nexecute if score @s tpaccept matches 0 unless entity @a[tag=tpa.sender] run tellraw @s {\"text\":\"You have no active teleport requests to accept.\",\"color\":\"red\"}\nexecute if score @s tpaccept matches 0 as @a[tag=tpa.sender] run function minecraft:untag_older_senders\nexecute as @a[tag=tpa.sender] run function minecraft:accept_tpa\ntag @s remove tpa.target",
+    "name": "trigger_tpaccept",
+    "namespace": "minecraft"
+  }
+}

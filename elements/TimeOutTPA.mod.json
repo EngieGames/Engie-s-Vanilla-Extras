@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "tag @s add tpa.sender\ntellraw @s {\"text\":\"Your teleport request has timed out after five minutes.\",\"color\":\"red\"}\nexecute as @a if score @s tpa.pid = @a[tag=tpa.sender,limit=1] tpa.target run tellraw @s [\"\",{\"selector\":\"@a[tag=tpa.sender]\",\"color\":\"red\"},{\"text\":\"'s teleport request has timed out after five minutes.\",\"color\":\"red\"}]\nscoreboard players reset @s tpa.target\nscoreboard players reset @s tpa.timeout\ntag @s remove tpa.sender",
+    "name": "time_out_tpa",
+    "namespace": "mod"
+  }
+}
