@@ -5,6 +5,6 @@
 ## Anyways...
 ### This mod adds:
 - ### Commands. (Like what did you expect, actual modded items or smth?)
-  - ### Said commands are /back (Teleport to latest death point.) and /tpa (There's more than 1 tpa command you can go in and check for yourself.)
+  - ### Said commands are /back (Teleport to latest death point. [DOESN'T WORK DIMENSION TO DIMENSION WISE, PLEASE BE AWARE OF THAT.]) and /tpa (There's more than 1 tpa command you can go in and check for yourself.)
 
-~~I also have no care if you just dip this, I just want to show off my modding skills.~~ <- **This is a joke by the way. I really do care if you download this.** Also go show support to the VanillaTweaks team & PuckiSilver, They're what inspired me to make this in the first place.
+~~I also have no care if you just dip this, I just want to show off my modding skills.~~ <- **This is a joke by the way. I really do care if you download this.** Also go show support to the VanillaTweaks team & PuckiSilver, they're what inspired me to make this in the first place.
