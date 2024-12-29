@@ -1,8 +1,10 @@
 # Heads up!
-- **There are a lot of references to other games.**
-- **Sadly, there's not a WIKI yet.** :(
-## Thank you for reading. Now let's talk about the real stuff.
+- ## **There is use of 2 datapacks I HAVE to give credit to the owners who both are...**
+- ### **VanillaTweaks  Team (TPA datapack)**
+- ### **PuckiSilver (Keep Some Inventory Datapack)**
+## Anyways...
 ### This mod adds:
-- Mobs. This is not a joke, I'm being serious.
+- ### Commands. (Like what did you expect, actual modded items or smth?)
+  - ### Said commands are /back (Teleport to latest death point.) and /tpa (There's more than 1 tpa command you can go in and check for yourself.)
 
-~~I also have no care if you just dip this, I just want to show off my modding skills.~~ <- **This is a joke by the way. I really do care if you download this.** Oh and I have been working on this since **2019**. I'm only deciding to upload this now.
+~~I also have no care if you just dip this, I just want to show off my modding skills.~~ <- **This is a joke by the way. I really do care if you download this.** Also go show support to the VanillaTweaks team & PuckiSilver, They're what inspired me to make this in the first place.
