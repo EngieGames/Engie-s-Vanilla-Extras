@@ -6,11 +6,11 @@
     "items": [],
     "blocks": [],
     "functions": [
-      "Uninstalltpa"
+      "Load"
     ],
     "entities": [],
     "biomes": [],
-    "name": "uninstall",
+    "name": "load_tpa",
     "namespace": "minecraft"
   }
 }

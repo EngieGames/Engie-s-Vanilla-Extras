@@ -1,19 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Uninstall",
-      "type": "tag",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uninstall",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/functions/uninstall.json"
-        ]
-      }
-    },
-    {
       "name": "Tickload",
       "type": "tag",
       "sortid": 21,
@@ -392,19 +379,6 @@
       }
     },
     {
-      "name": "UninstallTPA",
-      "type": "function",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uninstall_tpa",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/engiesvanillaextras/functions/uninstall_tpa.mcfunction"
-        ]
-      }
-    },
-    {
       "name": "UntagOlderSenders",
       "type": "function",
       "sortid": 50,
@@ -580,9 +554,133 @@
           "src/main/java/net/mcreator/engiesvanillaextras/command/GmspCommand.java"
         ]
       }
+    },
+    {
+      "name": "LoadTPA",
+      "type": "tag",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "load_tpa",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/functions/load_tpa.json"
+        ]
+      }
+    },
+    {
+      "name": "KSIConfig",
+      "type": "function",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ksi_config",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/ksi_config.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "DropXP",
+      "type": "function",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drop_xp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/drop_xp.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "LoopThroughInv",
+      "type": "function",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loop_through_inv",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/loop_through_inv.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "OnDeath",
+      "type": "function",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_death",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/on_death.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "SpawnAll",
+      "type": "function",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_all",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/spawn_all.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "SpawnNext",
+      "type": "function",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_next",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/spawn_next.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "LoadKSI",
+      "type": "tag",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "load_ksi",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/functions/load_ksi.json"
+        ]
+      }
+    },
+    {
+      "name": "KSILoad",
+      "type": "function",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ksi_load",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/engiesvanillaextras/functions/ksi_load.mcfunction"
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "glowgive",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {}
@@ -594,8 +692,8 @@
   "workspaceSettings": {
     "modid": "engiesvanillaextras",
     "modName": "[Dev]Engie(Games)\u0027s Vanilla Extras",
-    "version": "12.27.24",
-    "description": "credits are given!",
+    "version": "12.28.24",
+    "description": "Check them out, just go on!",
     "author": "[Dev]Engie(Games)",
     "websiteURL": "https://twitch.tv/engiegames",
     "license": "MIT License",
@@ -606,7 +704,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.19.2",
-    "credits": "VanillaTweaks (TPA datapack usage.)",
+    "credits": "VanillaTweaks Team (TPA datapack usage.), PuckiSilver (Keep Some Inventory Datapack)",
     "modElementsPackage": "net.mcreator.engiesvanillaextras",
     "lockBaseModFiles": false
   },

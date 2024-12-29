@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "function engiesvanillaextras:spawn_next\ndata remove storage ps:keep spawn[-1]\nexecute if data storage ps:keep spawn[0] run function engiesvanillaextras:spawn_all\n",
+    "name": "spawn_all",
+    "namespace": "mod"
+  }
+}

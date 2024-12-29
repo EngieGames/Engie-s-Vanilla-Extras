@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "scoreboard players reset @s ps-keep\nexecute if score keep_items ps-keep.config matches 0..1 run clear @s ps-keep:all{Enchantments: [{id: \"vanishing_curse\"}]}\nexecute if score keep_items ps-keep.config matches 0..1 run data modify storage ps:keep spawn set from entity @s Inventory\nexecute if score keep_items ps-keep.config matches 0 run clear @s\nexecute if score keep_items ps-keep.config matches 1 run clear @s ps-keep:drop_on_death\nexecute if score keep_items ps-keep.config matches 1 run data modify storage ps:keep inv set from storage ps:keep spawn\nexecute if score keep_items ps-keep.config matches 1 run data modify storage ps:keep kept set from entity @s Inventory\nexecute if score keep_items ps-keep.config matches 0 if data storage ps:keep spawn[0] run function engiesvanillaextras:spawn_all\nexecute if score keep_items ps-keep.config matches 1 run function engiesvanillaextras:loop_through_inv\nexecute if score keep_experience ps-keep.config matches 0 run function engiesvanillaextras:drop_xp\n",
+    "name": "on_death",
+    "namespace": "mod"
+  }
+}

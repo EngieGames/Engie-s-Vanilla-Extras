@@ -1,0 +1,16 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Functions",
+    "items": [],
+    "blocks": [],
+    "functions": [
+      "Load"
+    ],
+    "entities": [],
+    "biomes": [],
+    "name": "load_ksi",
+    "namespace": "minecraft"
+  }
+}

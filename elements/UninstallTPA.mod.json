@@ -1,9 +1,0 @@
-{
-  "_fv": 47,
-  "_type": "function",
-  "definition": {
-    "code": "schedule clear minecraft:tick\nschedule clear minecraft:decrement_cooldowns\nscoreboard objectives remove tpa.config\nscoreboard objectives remove tpa.pid\nscoreboard objectives remove tpa.target\nscoreboard objectives remove tpa.timeout\nscoreboard objectives remove tpa.cooldown\nscoreboard objectives remove tpa\nscoreboard objectives remove tpcancel\nscoreboard objectives remove tpaccept\nscoreboard objectives remove tpdeny",
-    "name": "uninstall_tpa",
-    "namespace": "mod"
-  }
-}

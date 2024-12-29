@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "execute store result score .level ps-keep run xp query @s levels\nscoreboard players operation .xp ps-keep = .level ps-keep\nscoreboard players operation .xp ps-keep *= .level ps-keep\nscoreboard players operation #temp ps-keep = .level ps-keep\nexecute if score .level ps-keep matches 17..31 run scoreboard players operation .xp ps-keep *= .5 ps-keep\nexecute if score .level ps-keep matches 32.. run scoreboard players operation .xp ps-keep *= .9 ps-keep\nexecute if score .level ps-keep matches 1..16 run scoreboard players operation #temp ps-keep *= .6 ps-keep\nexecute if score .level ps-keep matches 17..31 run scoreboard players operation #temp ps-keep *= .-81 ps-keep\nexecute if score .level ps-keep matches 32.. run scoreboard players operation #temp ps-keep *= .-325 ps-keep\nscoreboard players operation .xp ps-keep += #temp ps-keep\nexecute if score .level ps-keep matches 17.. run scoreboard players operation .xp ps-keep /= .2 ps-keep\nexecute if score .level ps-keep matches 17..31 run scoreboard players add .xp ps-keep 360\nexecute if score .level ps-keep matches 32.. run scoreboard players add .xp ps-keep 2220\nexecute store result score #temp ps-keep run xp query @s points\nscoreboard players operation .xp ps-keep += #temp ps-keep\nsummon experience_orb ~ ~ ~ {Tags: [\"ps-keep\"]}\nexecute store result entity @e[type=experience_orb, tag=ps-keep, limit=1] Value short 1 run scoreboard players get .xp ps-keep\ntag @e[type=experience_orb, tag=ps-keep, limit=1] remove ps-keep\nxp set @s 0 levels\nxp set @s 0 points\n",
+    "name": "drop_xp",
+    "namespace": "mod"
+  }
+}

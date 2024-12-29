@@ -1,0 +1,9 @@
+{
+  "_fv": 47,
+  "_type": "function",
+  "definition": {
+    "code": "summon item ~ ~ ~ {Tags: [\"ps-keep\"], Item: {id: \"minecraft:stone\", Count: 1b}}\nexecute store result entity @e[type=item, tag=ps-keep, limit=1] Age short 1 run scoreboard players get item_despawn_offset config.ps-keep\nexecute as @e[type=item, tag=ps-keep, limit=1] run data modify entity @s Item set from storage ps:keep spawn[-1]\ntag @e[type=item, tag=ps-keep, limit=1] remove ps-keep\n",
+    "name": "spawn_next",
+    "namespace": "mod"
+  }
+}

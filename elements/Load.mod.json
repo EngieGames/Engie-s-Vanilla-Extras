@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "function",
   "definition": {
-    "code": "scoreboard objectives add tpa.config dummy \"TPA Config\"\nscoreboard objectives add tpa.pid dummy \"Player ID\"\nscoreboard objectives setdisplay list tpa.pid\nscoreboard objectives add tpa.target dummy\nscoreboard objectives add tpa.timeout dummy\nscoreboard objectives add tpa.cooldown dummy\nscoreboard objectives add tpa trigger\nscoreboard objectives add tpcancel trigger\nscoreboard objectives add tpaccept trigger\nscoreboard objectives add tpdeny trigger\nexecute unless score cooldown tpa.config matches 0.. run scoreboard players set cooldown tpa.config 0",
+    "code": "scoreboard objectives add tpa.config dummy \"TPA Config\"\nscoreboard objectives add tpa.pid dummy \"Player ID\"\nscoreboard objectives setdisplay list tpa.pid\nscoreboard objectives add tpa.target dummy\nscoreboard objectives add tpa.timeout dummy\nscoreboard objectives add tpa.cooldown dummy\nscoreboard objectives add tpa trigger\nscoreboard objectives add tpcancel trigger\nscoreboard objectives add tpaccept trigger\nscoreboard objectives add tpdeny trigger\nexecute unless score cooldown tpa.config matches 0.. run scoreboard players set cooldown tpa.config 0\n",
     "name": "load",
     "namespace": "mod"
   }
