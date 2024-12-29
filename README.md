@@ -1,7 +1,7 @@
 # Heads up!
 - ## **There is use of 2 datapacks I HAVE to give credit to the owners who both are...**
-- ### **VanillaTweaks  Team (TPA datapack)**
-- ### **PuckiSilver (Keep Some Inventory Datapack)**
+- ### **[VanillaTweaks  Team](https://vanillatweaks.net/about/) [(TPA datapack)](https://vanillatweaks.net/picker/datapacks/)**
+- ### **[PuckiSilver](https://modrinth.com/user/PuckiSilver) [(Keep Some Inventory Datapack)](https://modrinth.com/datapack/keep-some-inventory)**
 ## Anyways...
 ### This mod adds:
 - ### Commands. (Like what did you expect, actual modded items or smth?)
