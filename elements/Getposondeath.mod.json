@@ -1,0 +1,7 @@
+{
+  "_fv": 47,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_dies</field><next><block type=\"variables_set_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:xcooard</field><value name=\"VAL\"><block type=\"entity_get_spawn_x\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><next><block type=\"variables_set_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:ycooard</field><value name=\"VAL\"><block type=\"entity_get_spawn_y\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><next><block type=\"variables_set_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:zcooard</field><value name=\"VAL\"><block type=\"entity_get_spawn_z\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></next></block></next></block></next></block></xml>"
+  }
+}

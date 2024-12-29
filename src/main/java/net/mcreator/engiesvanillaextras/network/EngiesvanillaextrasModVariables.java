@@ -66,7 +66,9 @@ public class EngiesvanillaextrasModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.glowgive = original.glowgive;
+			clone.xcooard = original.xcooard;
+			clone.ycooard = original.ycooard;
+			clone.zcooard = original.zcooard;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -103,7 +105,9 @@ public class EngiesvanillaextrasModVariables {
 	}
 
 	public static class PlayerVariables {
-		public boolean glowgive = false;
+		public double xcooard = 0;
+		public double ycooard = 0;
+		public double zcooard = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -112,13 +116,17 @@ public class EngiesvanillaextrasModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putBoolean("glowgive", glowgive);
+			nbt.putDouble("xcooard", xcooard);
+			nbt.putDouble("ycooard", ycooard);
+			nbt.putDouble("zcooard", zcooard);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			glowgive = nbt.getBoolean("glowgive");
+			xcooard = nbt.getDouble("xcooard");
+			ycooard = nbt.getDouble("ycooard");
+			zcooard = nbt.getDouble("zcooard");
 		}
 	}
 
@@ -143,7 +151,9 @@ public class EngiesvanillaextrasModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.glowgive = message.data.glowgive;
+					variables.xcooard = message.data.xcooard;
+					variables.ycooard = message.data.ycooard;
+					variables.zcooard = message.data.zcooard;
 				}
 			});
 			context.setPacketHandled(true);

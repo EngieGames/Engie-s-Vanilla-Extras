@@ -671,14 +671,96 @@
           "src/main/resources/data/engiesvanillaextras/functions/ksi_load.mcfunction"
         ]
       }
+    },
+    {
+      "name": "Getposondeath",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getposondeath",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/engiesvanillaextras/procedures/GetposondeathProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Backcommandpro",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "backcommandpro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/engiesvanillaextras/procedures/BackcommandproProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Back",
+      "type": "command",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/engiesvanillaextras/command/BackCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Playerrespawnpro",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerrespawnpro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/engiesvanillaextras/procedures/PlayerrespawnproProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
     {
-      "name": "glowgive",
-      "type": "logic",
+      "name": "xcooard",
+      "type": "number",
       "scope": "player_persistent",
-      "value": "false"
+      "value": "0"
+    },
+    {
+      "name": "ycooard",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "zcooard",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
