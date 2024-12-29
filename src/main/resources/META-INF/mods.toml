@@ -4,10 +4,11 @@ license="MIT License"
 
 [[mods]]
 modId="engiesvanillaextras"
-version="12.28.24"
+version="12.29.24"
 displayName="[Dev]Engie(Games)'s Vanilla Extras"
 credits="VanillaTweaks Team (TPA datapack usage.), PuckiSilver (Keep Some Inventory Datapack)"
 displayURL="https://twitch.tv/engiegames"
+logoFile="logo.png"
 authors="[Dev]Engie(Games)"
 description="Check them out, just go on!"
 
